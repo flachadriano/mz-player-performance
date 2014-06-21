@@ -41,5 +41,3 @@ end
 
 # Use debugger
 gem 'byebug', group: [:development, :test]
-
-gem 'devise'
