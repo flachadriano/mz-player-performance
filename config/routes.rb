@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'teams#new'
+	root 'teams#index'
 
-  get 'teams' => 'teams#index'
+	resources :teams, only: :index do
+		post :load, on: :collection
+	end
 end

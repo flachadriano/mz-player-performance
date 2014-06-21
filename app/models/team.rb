@@ -5,4 +5,7 @@ class Team
 
 	validate :username, presence: true
 
+	def load_performance
+	end
+
 end
